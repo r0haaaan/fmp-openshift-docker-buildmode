@@ -1,0 +1,5 @@
+FROM openjdk:11
+ARG myVAR
+VOLUME /tmp
+ENV JAR=$myVAR
+ENTRYPOINT echo "ARGUMENT IS $JAR"
